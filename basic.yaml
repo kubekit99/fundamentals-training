@@ -1,12 +1,15 @@
-tosca_definitions_version: cloudify_dsl_1_3
+tosca_definitions_version: cloudify_dsl_1_4
+# tosca_definitions_version: cloudify_dsl_1_3
 
 imports:
 
-  - http://www.getcloudify.org/spec/cloudify/6.3.1/types.yaml
+  # - http://www.getcloudify.org/spec/cloudify/6.3.1/types.yaml
+  - http://www.getcloudify.org/spec/cloudify/6.4.0/types.yaml
 
 node_templates:
 
   basic_node:
+    # type: cloudify.nodes.Root
     type: cloudify.nodes.Root
     properties:
     interfaces:
